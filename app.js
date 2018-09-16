@@ -38,4 +38,16 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+//视图助手
+var util = require('util');
+
+app.locals.inspect = function(obj) {
+  return util.inspect(obj, true);
+}
+
+app.locals.headers = function(req, res) {
+  return req.headers;
+}
+
 module.exports = app;
+
