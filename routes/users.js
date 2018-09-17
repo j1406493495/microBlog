@@ -10,4 +10,24 @@ router.get('/:username', function(req, res) {
   res.send('user: ' + req.params.username);
 })
 
+router.get('/reg', function(req, res) {
+
+})
+
+router.post('/reg', function(req, res) {
+
+})
+
+router.get('/login', function(req, res) {
+
+})
+
+router.post('/login', function(req, res) {
+
+})
+
+router.get('/logout', function(req, res) {
+
+})
+
 module.exports = router;

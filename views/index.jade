@@ -1,5 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1= '欢迎来到 Microblog'
+  p= 'Microblog 是一个基于 Node.js 的微博系统。'
+    a(href="/users/login" class="btn btn-primary btn-large")='登录'
+    a(href="/users/reg" class="btn btn-large")='注册'
